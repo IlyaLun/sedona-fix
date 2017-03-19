@@ -8,11 +8,11 @@
 
     <header class="page-header">
 
-      <div class="main-logo">
-        <img src="img/logo.svg" width="" height="" alt="Логотип Sedona">
-      </div>
-
       <nav class="main-nav">
+
+        <div class="main-nav__logo">
+          <a><img src="img/logo.svg" width="" height="" alt="Логотип Sedona"></a>
+        </div>
 
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">Информация</a></li>
@@ -27,87 +27,92 @@
 
     <main>
 
-      <section class="page-title">
+      <div class="promo">
+        <img src="img/main-pict.jpg" alt="" width="1200" height="800">
+      </div>
 
-        <img src="img/main-pict.jpg" alt="Седона" width="1200" height="800">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньён.</p>
+      <article class="reasons">
 
-      </section>
+        <header class="reasons__header">
+          <h1 class="reasons__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="reasons__discription">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньён.</p>
+        </header>
 
-      <section class="reason-1">
+        <!-- 1st reason -->
+        <div class="reasons__inner">
 
+          <div class="reason  reason--blue">
+            <h2 class="reason__title">Настоящий городок</h2>
+            <div class="reason__number">- №1 -</div>
+            <p class="reason__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+
+            <div class="reason-picture">
+              <img src="img/reason1.jpg" alt="" width="" height="">
+            </div>
+
+        </div>
+
+        <div class="reason  reason--icon  reason--icon-home">
+          <h2 class="reason__title">Жильё</h2>
+          <p class="reason__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+
+        <div class="reason  reason--icon  reason--icon-food">
+          <h2 class="reason__title">Еда</h2>
+          <p class="reason__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+        </div>
+
+        <div class="reason  reason--icon  reason--icon-gift">
+          <h2 class="reason__title">Сувениры</h2>
+          <p class="reason__description">Не только китайского, но и местного производства!</p>
+        </div>
+
+        <!-- 2nd reason -->
+        <div class="reasons__inner reasons__inner--reverse">
+
+          <div class="reason-picture">
+              <img src="img/reason2.jpg" alt="" width="" height="">
+          </div>
+
+          <div class="reason  reason--blue">
+            <h2 class="reason__title">Там есть мост дьявола</h2>
+            <div class="reason__number">- №2 -</div>
+            <p class="reason__description">Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
+          </div>
+
+        </div>
+
+        <!-- 3,4,5 reasons -->
         <div class="reason__inner">
 
-          <h2 class="reason-1__title">Настоящий городок</h2>
-          <b class="reason-1__number">- №1 -</b>
-          <p class="reason-1__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="reason-1__picture" src="img/reason1.jpg" alt="" width="800" height="256">
+          <div class="reason  reason--gray">
+            <h2 class="reason__title">Небольшая площадь</h2>
+            <div class="reason__number">- №3 -</div>
+            <p class="reason__description">Все достопримечательности находятся очень близко</p>
+          </div>
+
+          <div class="reason  reason--gray">
+            <h2 class="reason__title">Красивая дорога</h2>
+            <div class="reason__number">- №4 -</div>
+            <p class="reason__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+
+          <div class="reason  reason--gray">
+            <h2 class="reason__title">Мало туристов</h2>
+            <div class="reason__number">- №5 -</div>
+            <p class="reason__description">Большинство едет в Гранд Каньён и толпится там</p>
+          </div>
 
         </div>
 
-        <div class="features__inner">
-
-          <b class="reason-1__features-title">Жильё</p>
-          <p class="reason-1__features-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-
-        </div>
-
-        <div class="features__inner">
-
-          <b class="reason-1__features-title">Еда</b>
-          <p class="reason-1__features-description">Всегда заказывайте фирменный бургер, вы не разочарюетесь!</p>
-
-        </div>
-
-        <div class="features__inner">
-
-          <b class="reason-1__features-title">Сувениры</b>
-          <p class="reason-1__features-description">Не только китайского, но и местного производства!</p>
-
-        </div>
-
-      </section>
-
-      <section class="reason-2">
-
-        <img class="reason-2__picture" src="img/reason2.jpg" alt="" width="800" height="256">
-
-        <div class="reason-2__inner">
-          <h2 class="reason-2__title">Там есть мост дьявола</h2>
-          <b class="reason-2__number">- №2 -<b>
-          <p class="reason-2__description">Да, по нему можно пройти! Если конечно, вы осмелитесь</p>
-        </div>
-
-      </section>
-
-      <section class="other-reasons">
-
-        <div class="other-reasons__inner">
-          <h2 class="other-reasons__title">Небольшая площадь</h2>
-          <b class="other-reasons__number">- №3 -</b>
-          <p class="other-reasons__description">Все достопримечательности находятся очень близко</p>
-        </div>
-
-        <div class="other-reasons__inner">
-          <h2 class="other-reasons__title">Красивая дорога</h2>
-          <b class="other-reasons__number">- №4 -</b>
-          <p class="other-reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-
-        <div class="other-reasons__inner">
-          <h2 class="other-reasons__title">Мало туристов</h2>
-          <b class="other-reasons__number"> - №5 -</b>
-          <p class="other-reasons__description">Большинство едет в Гранд Каньён и толпится там</p>
-        </div>
-
-      </section>
+      </article>
 
       <section class="search">
 
-        <h3 class="search__title">Заинтересовались?</h3>
+        <h2 class="search__title">Заинтересовались?</h3>
         <p class="search__description">Укажите предполагаемы даты поездки, и мы покажем Вам лучшие предолжения гостиницы в Седоне</p>
-        <a class="search__btn" href="#">Поиск гостиницы в Седоне</a>
+        <button class="btn btn--search" type="button">Поиск гостиницы в Седоне</button>
 
       </section>
 
